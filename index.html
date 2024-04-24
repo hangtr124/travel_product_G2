@@ -1,0 +1,128 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Wanderlust Travels - Explore the World</title>
+    <style>
+        /* Colorful Background with Gradient Animation */
+        body {
+            background: linear-gradient(to right, #f9caaa, #fff2e1);
+            animation: background-shift 10s infinite alternate;
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+        }
+
+        @keyframes background-shift {
+            from {
+                background-position: 0 0;
+            }
+            to {
+                background-position: 100% 0;
+            }
+        }
+
+        /* Improved Header Styling */
+        header {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            padding: 20px;
+            background-color: #e1f2eb;
+            box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+        }
+
+        header a {
+            text-decoration: none;
+            color: #333;
+            margin-right: 20px;
+            font-weight: bold;
+            font-size: 1.2em;
+        }
+
+        /* Navigation with Logo and Call to Action Button */
+        .header-content {
+            display: flex;
+            align-items: center;
+        }
+
+        .logo {
+            margin-right: 20px;
+        }
+
+        .buttons button {
+            background-color: #F9AA33; /* Orange color */
+            color: #fff;
+            padding: 10px 20px;
+            border: none;
+            border-radius: 5px;
+            cursor: pointer;
+        }
+
+        .buttons button:hover {
+            background-color: #e69a29;
+        }
+
+        /* Improved Product Section with Responsive Grid */
+        .product {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+            grid-gap: 20px;
+            padding: 50px 0;
+        }
+
+        .product-card {
+            background-color: #fff;
+            box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+            border-radius: 5px;
+            text-align: center;
+            padding: 20px;
+            transition: transform 0.2s ease-in-out;
+        }
+
+        .product-card:hover {
+            transform: scale(1.02);
+        }
+
+        .product-card img {
+            width: 100%;
+            border-radius: 5px 5px 0 0;
+        }
+
+        .product-card h3 {
+            margin-top: 10px;
+            font-size: 18px;
+        }
+
+        .product-card p {
+            margin-top: 5px;
+            color: #666;
+        }
+
+        /* Enhanced Footer Styling */
+        footer {
+            text-align: center;
+            padding: 20px;
+            background-color: #e1f2eb;
+            box-shadow: 0 -2px 5px rgba(0, 0, 0, 0.1);
+        }
+
+        footer p {
+            color: #333;
+        }
+
+        footer a {
+            text-decoration: none;
+            color: #333;
+        }
+
+        /* Improved Form Styling (JavaScript will toggle visibility) */
+        .form-container {
+            display: none;
+            padding: 20px;
+            border-radius: 5px;
+            background-color: #fff;
+            box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+            margin: 20px auto;
+            max-width: 500px;
